@@ -1,0 +1,50 @@
+This week we're all going to make some changes to each others' repositories.
+
+Part 1:
+
+Take your final project from Web Dev 1 and create a git repository for it. You don't need to make any changes to the site just yet, but we will be using it later in this class.
+
+
+Part 2:
+
+Make a new project with the latest Circus Starter. Create a git repository with that project and do the following:
+
+- Make sure your include a .gitignore file that lists 'node_modules'
+
+- Commit the default circus starter project with the message 'initial commit'
+
+- Delete the contents of README.md and replace it with '<your name> - Git Homework'
+
+- Use markdown syntax to make your name bold in the readme. You will have to research how to do this.
+
+- Delete the contents of the html file and replace it with basic markup that includes your name, your quarter, and a list of three people you would want to be woth during a zombie apocalypse.
+
+- Commit this to the master (default) branch.
+
+
+Next, demonstrate the use of branches
+
+- Make a new branch called 'styling'
+
+- Add some color and font settings to make your html page look a little nicer. Like you would want an 'about me' page on your portfolio to look.
+
+- Commit your changes to the 'styling' branch
+
+- Make a pull request to merge those changes back into the main branch
+
+- Accept the pull request on github
+
+
+Finally, demonstrate how to revert undesired changes. 
+
+- Switch back to your master branch
+
+- Add a line to your html file that includes your favorite color
+
+- Commit that change and push
+
+- Then, revert to the prevous commit, so your favorite color no longer appears
+
+- Commit the reverted changes.
+
+Post a link to your repository on ringmaster. I should be able to look through your commit history and see these exact steps carried out
