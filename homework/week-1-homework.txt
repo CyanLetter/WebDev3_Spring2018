@@ -17,7 +17,7 @@ Make a new project with the latest Circus Starter. Create a git repository with 
 
 - Use markdown syntax to make your name bold in the readme. You will have to research how to do this.
 
-- Delete the contents of the html file and replace it with basic markup that includes your name, your quarter, and a list of three people you would want to be woth during a zombie apocalypse.
+- Delete the contents of the html file and replace it with basic markup that includes your name, your quarter, and a list of three people you would want to have with you during a zombie apocalypse.
 
 - Commit this to the master (default) branch.
 
@@ -43,7 +43,7 @@ Finally, demonstrate how to revert undesired changes.
 
 - Commit that change and push
 
-- Then, revert to the prevous commit, so your favorite color no longer appears
+- Then, revert to the previous commit, so your favorite color no longer appears
 
 - Commit the reverted changes.
 
