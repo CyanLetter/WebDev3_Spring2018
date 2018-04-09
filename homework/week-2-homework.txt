@@ -1,0 +1,38 @@
+Make a pricing page for a fake software product. The Unity pricing page is a good example of the format I'm looking for:
+
+https://store.unity.com/
+
+Other good examples:
+
+https://bitbucket.org/product/pricing?tab=host-in-the-cloud
+https://slack.com/pricing
+https://www.invisionapp.com/plans
+
+The site itself should be a simple landing page to purchase three tiers of a software service, built using sass. At the minimum, your Sass file should contain examples of the following:
+
+- Nested style rules. No specific number here, just try to nest things in a way that is efficient and makes sense to you. This is one of Sass' handiest features.
+- At least two variables, one for a primary text color, one for a secondary accent color for links and buttons.
+- At least one inline media query, to make your page go from a three column layout to one column. Bonus points if you use a mixin for this.
+- At least one partial Sass file included in your main file.
+- At least one mixin. This can be as simple or complex as you like. While the breakpoint mixin we discussed in class is useful, I encourage you to look online for other sass mixins as well.
+
+The page itself must be responsive and should include 2 main sections:
+
+Section 1 should contain:
+
+- A header image
+- Call-to-action text
+
+Section 2 should contain three columns, each with a module that lists one level of pricing for your fake service. Each module should include:
+
+- A title
+- A price
+- A short description
+- A list of features.
+- A Buy button
+
+Additionally, one of these columns should have some unique styling, to indicate that it is the suggested price tier. Use @extend to make styling modifications for this section.
+
+You will be graded on your sass file as much as the site itself. Keep in mind that the main goal of this assignment is to get you comfortable using Sass on a regular basis, so focus your effors on writing effective, reusable styles. I will look at your Sass files in future projects, but this is the best time to ask about best practices and figure out the parts that you like using. There are about a million bad habits you can develop while using sass, so let's try to address them early.
+
+Submit a link to the project on github.
