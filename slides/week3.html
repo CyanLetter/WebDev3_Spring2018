@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Dev 3</title>
+
+		<meta name="description" content="Lecture for Web Dev 3">
+		<meta name="author" content="Dakota Ling">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Week 3</h1>
+					<h3>Big Images, SVG, Image Optimization</h3>
+					<h4>Part 1</h4>
+				</section>
+
+				<section>
+					<h2>Why Images Matter</h2>
+					<p>Websites are getting bigger.</p>
+					<p>Images account for <a href="https://speedcurve.com/blog/web-performance-page-bloat/">majority of a page's size.</a></p>
+				</section>
+
+				<section>
+					<h2>Big Images Look Good</h2>
+					<a href="https://twitter.com/timcaynes/status/554593526034731008/photo/1?tfw_creator=thoughtwax&tfw_site=intercom&ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fblog.intercom.com%2Fhas-visual-design-fallen-flat%2F">Every Agency Ever</a><br>
+					<p><a href="http://www.novolume.co.uk/blog/all-websites-look-the-same/">Something looks familiar...</a></p>
+					<a href="https://www.hugeinc.com/">Huge</a><br>
+					<a href="https://www.brightlabs.com.au/">Brightlabs</a><br>
+					<a href="http://hellomonday.com/">Hello Monday</a><br>
+				</section>
+
+				<section>
+					<p>Image optimization is the quickest route to improving page performance.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>How to Check Image Size</h2>
+						<p>On your computer and in the browser.</p>
+					</section>
+					<section>
+						<h2>Finder / Explorer</h2>
+						<p>List view will have a column.</p>
+						<p>Column view also shows dimensions.</p>
+					</section>
+					<section>
+						<h2>Chrome Dev Tools</h2>
+						<p><img src="images/networkprofile.png"></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Image Formats</h2>
+						<ul>
+							<li>JPG</li>
+							<li>PNG</li>
+							<li>SVG</li>
+							<li>GIF</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Some Sources</h2>
+						<p><a href="https://unsplash.com/">Unsplash</a></p>
+						<p><a href="https://webgradients.com/">Web Gradients</a></p>
+						<p><a href="https://fontawesome.com/">Font Awesome</a></p>
+					</section>
+					<section>
+						<h2>JPG</h2>
+						<p>Good for:</p>
+						<ul>
+							<li>Photographs</li>
+							<li>High complexity images</li>
+							<li>No transparency</li>
+						</ul>
+					</section>
+					<section>
+						<h2>PNG</h2>
+						<p>Good for:</p>
+						<ul>
+							<li>Illustrations</li>
+							<li>Hard edges</li>
+							<li>Transparency</li>
+						</ul>
+					</section>
+					<section>
+						<h2>SVG</h2>
+						<p>Good for:</p>
+						<ul>
+							<li>Vector art</li>
+							<li>Icons</li>
+							<li>Large, simple images</li>
+						</ul>
+					</section>
+					<section>
+						<h2>GIF</h2>
+						<p>Good for:</p>
+						<ul>
+							<li>Nothing</li>
+							<li>Animation maybe</li>
+							<li>Ugh</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>General Compression</h2>
+						<p>Tools to give you a good starting point.</p>
+						<p>Lossless compression, to maintain quality.</p>
+					</section>
+					<section>
+						<h2>gulp-imagemin</h2>
+						<p>Image compression built into the Circus starter.</p>
+					</section>
+					<section>
+						<h2>Desktop Tools</h2>
+						<p><a href="https://imageoptim.com/mac">Imageoptim</a> for Mac</p>
+						<p><a href="https://sourceforge.net/projects/nikkhokkho/">FileOptimizer</a> for Windows</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Physical Size</h2>
+						<p>Use images at the right dimensions.</p>
+						<p>You control the CSS, you know the maximum size.</p>
+						<p>Designers will often hand you much higher res than you need.</p>
+					</section>
+					<section>
+						<h2>Size images for their role</h2>
+						<ul>
+							<li>Background images don't have to be huge</li>
+							<li>Use thumbnails or lazy loading for high-res content</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Optimizing JPG</h2>
+						<p>Photoshop - Save for Web</p>
+						<p>You cannot beat the tools here.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Optimizing PNG</h2>
+						<p>Isn't PNG lossless?</p>
+						<p>Lossy compression with <a href="https://pngquant.org/">Pngquant</a>.</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Optimizing SVG</h2>
+						<p>Talk to your designer.</p>
+						<p><a href="https://jakearchibald.github.io/svgomg/">SVG OMG</a></p>
+					</section>
+
+				</section>
+
+				<section>
+					<h2>Next class</h2>
+					<ul>
+						<li>Multiple image sizes</li>
+						<li>Spritesheets</li>
+						<li>Lazy Loading</li>
+						<li>Future Image Formats</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Homework</h2>
+				</section>
+<!--
+				<section>
+					<section>
+						<h2>Multiple Sizes</h2>
+						<p>Adjusting for different devices</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Spritesheets and Deferred Loading</h2>
+						<p>How to cheat the system</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Future Formats</h2>
+						<p>Better image formats for the web.</p>
+						<ul>
+							<li>WebP</li>
+							<li>HEIF/HEIC</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<h2>That's it</h2>
+				</section>
+-->
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

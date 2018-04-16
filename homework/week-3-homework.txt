@@ -1,0 +1,5 @@
+Optimize the included site to have a total load weight below 500k.
+
+The site as it is has a final load of 14.4MB. Using what we discussed in class, optimize the images on the site to bring the final load below 500KB. More importantly, make sure the images you end up with still look good at all reasonable browser sizes.
+
+Submit a link to the project on github.
