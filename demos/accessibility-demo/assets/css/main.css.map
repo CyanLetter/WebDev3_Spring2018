@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","sources":["main.scss"],"sourcesContent":["*:focus {\n\tbackground: #ff00aa !important;\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,AAAA,MAAM,CAAC;EACP,UAAU,EAAE,kBAAkB,GAC9B"}

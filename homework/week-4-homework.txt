@@ -1,0 +1,9 @@
+Make your sass site accessible, and add a second ‘order form’ page.
+
+Take the site you made for week 2 homework, and make sure the main page functions when navigating with a keyboard. This includes making sure you can access all of your buy links, and that the descriptions of those links are meaningful to a screen reader (e.g. all three have additional descriptions beyond ‘buy now’).
+
+Then, make a separate page for sign-ups or preorders. I will leave the exact number and type of form fields to your discretion, based on your chosen product. However, you should at least have a name and email field. Building something as complex as a credit card input form is not required. The form should also, obviously, be accessible and navigable using a keyboard. 
+
+You site should pass validation using the chrome extension tool that we looked at in class.
+
+Work in the same github repository that you used for week 2 homework. Commit these additions and submit the repository link in ringmaster.

@@ -187,25 +187,101 @@
 				</section>
 
 				<section>
-					<h2>Next class</h2>
-					<ul>
-						<li>Multiple image sizes</li>
-						<li>Spritesheets</li>
-						<li>Lazy Loading</li>
-						<li>Future Image Formats</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Homework</h2>
-				</section>
-<!--
-				<section>
 					<section>
 						<h2>Multiple Sizes</h2>
-						<p>Adjusting for different devices</p>
+						<p>Presenting different images on different devices.</p>
+						<ul>
+							<li>picture element</li>
+							<li>srcset</li>
+						</ul>
+						<p>These all fall back to regular images.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Srcset</h2>
+						<h6>(source set)</h6>
+						<p>Multiple image sources in an image tag</p>
+						<ul>
+							<li>Property of img element</li>
+							<li>Resolution change only</li>
+							<li>Let the browser decide</li>
+						</ul>
 					</section>
 
+					<section>
+						<p>Srcset example</p>
+						<pre style="white-space: normal;"><code>
+<img srcset="lawrence-ipsum-1x.jpg 1x, lawrence-ipsum-2x.jpg 2x"
+src="lawrence-ipsum-1x.jpg">
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Density</h2>
+						<p>1x, 2x, etc. specify display density.</p>
+						<p>Use for fixed size images.</p>
+					</section>
+
+					<section>
+						<p>Fluid width</p>
+						<pre style="white-space: normal;"><code>
+<img srcset="flowers-small.jpg 480w, flowers-medium.jpg 720w, flowers-large.jpg 1200w" sizes="100vw"
+src="flowers-large.jpg">
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Width</h2>
+						<p>480w, 720w, etc. specify the width of the image file.</p>
+					</section>
+
+					<section>
+						<h2>Sizes</h2>
+						<p>Sizes attribute specifies width of image on the page.</p>
+						<p>Can use this to define column layout changes.</p>
+						<pre style="white-space: normal;"><code>
+<img sizes="(min-width: 640px) 50vw, 100vw" ...>
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Picture</h2>
+						<p>Builds off of srcset.</p>
+						<ul>
+							<li>Use for Art Direction</li>
+							<li>Use for multiple image formats</li>
+							<li>Browser has little to no control</li>
+							<li><a href="https://cloudfour.com/thinks/dont-use-picture-most-of-the-time/">Use sparingly</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Art Direction</h2>
+						<p>Media queries define image to use.</p>
+						<pre><code>
+<picture>
+    <source media="(min-width: 640px)" srcset="dist/img/castle-wide-large.jpg">
+    <source media="(max-width: 640px)" srcset="dist/img/castle-square.jpg">
+    <img src="dist/img/castle-wide-large.jpg">
+</picture>
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Image Formats</h2>
+						<p>Browser uses first image format it recognizes.</p>
+						<pre><code>
+<picture>
+    <source srcset="img/castle.webp" type="image/webp">
+    <source srcset="img/castle.jpg" type="image/jpeg"> 
+    <img src="img/castle.jpg">
+</picture>
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
@@ -214,24 +290,59 @@
 						<p>How to cheat the system</p>
 					</section>
 
+					<section>
+						<h2>Spritesheets</h2>
+						<p>Fewer image requests is better.</p>
+					</section>
+
+					<section>
+						<h2>Icons</h2>
+						<p>Let's look at <a href="https://fontawesome.com/how-to-use/svg-sprites">Fontawesome</a></p>
+					</section>
+
+					<section>
+						<h2>Animation</h2>
+						<p>You can use background images and background position.</p>
+						<p><a href="http://www.primalscreen.com/about/people">Primal Screen</a> example.</p>
+					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>Future Formats</h2>
-						<p>Better image formats for the web.</p>
+						<p>New, better image formats for the web.</p>
 						<ul>
 							<li>WebP</li>
 							<li>HEIF/HEIC</li>
 						</ul>
 					</section>
 
+					<section>
+						<h2>WEBP</h2>
+						<p><a href="https://developers.google.com/speed/webp/">Google's format</a>, Blink only.</p>
+						<p>Based on VP8 video compression.</p>
+						<ul>
+							<li>Lossy or lossless</li>
+							<li>Process with <a href="https://www.npmjs.com/package/imagemin-webp">node</a> or <a href="https://webp-converter.com/">online</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>HEIF</h2>
+						<ul>
+							<li>Apple's format</li>
+							<li>Based on H.265 video compression.</li>
+							<li><a href="https://css-tricks.com/comparing-novel-vs-tried-true-image-formats/#article-header-id-5">Lot of cool features</a></li>
+							<li>No browser support</li>
+						</ul>
+
+					</section>
 				</section>
 
 				<section>
 					<h2>That's it</h2>
 				</section>
--->
+
 			</div>
 
 		</div>

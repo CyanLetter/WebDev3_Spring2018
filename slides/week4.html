@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Dev 3</title>
+
+		<meta name="description" content="Lecture for Web Dev 3">
+		<meta name="author" content="Dakota Ling">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Week 4</h1>
+					<h3>Accesibility</h3>
+				</section>
+
+				<section>
+					<section>
+						<h2>Accessibility is...</h2>
+						<p>Making sure that anyone can use your site, under any condition.</p>
+					</section>
+					<section>
+						<h2>Why</h2>
+						<ul>
+							<li>Good accessibility is good user experience</li>
+							<li>Not difficult, but frequently an afterthought</li>
+							<li>Government requirements (sometimes)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Who</h2>
+						<p>Anyone who has an impairment, be it temporary or permanent:</p>
+						<ul>
+							<li>Vision</li>
+							<li>Hearing</li>
+							<li>Motor Skills</li>
+							<li>Cognitive Ability</li>
+							<li>Hardware</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Standards</h2>
+							<ul>
+								<li><a href="https://www.w3.org/TR/WCAG20/">WCAG</a>, the official W3 guielines, and the <a href="https://webaim.org/standards/wcag/checklist">WebAIM</a> checklist</li>
+								<li>The <a href="http://a11yproject.com/">A11Y</a> project</li>
+								<li>Government guidelines like <a href="https://www.section508.gov/content/learn">Section 508</a></li>
+							</ul>
+					</section>
+					<section>
+						<h2>This is a lot</h2>
+						<p>Too much to cover in one class, but it should be enough to get you started.</p>
+						<p>Check out other <a href="https://developers.google.com/web/fundamentals/accessibility">tutorials</a> for deeper knowledge</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>How to Test</h2>
+						<ul>
+							<li>Test with <a href="http://udacity.github.io/ud891/lesson2-focus/01-basic-form/">keyboard only</a></li>
+							<li>Test with <a href="https://support.apple.com/en-us/HT204390">VoiceOver</a> and <a href="http://udacity.github.io/ud891/lesson2-focus/01-basic-form/">other tools</a></li>
+							<li>Use a <a href="http://wave.webaim.org/extension/">browser extension</a></li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>How to Implement:</h2>
+						<ul>
+							<li>Focus</li>
+							<li>Semantic Elements and ARIA</li>
+							<li>Styles</li>
+						</ul>
+						<p><a href="https://medium.com/@realabhijeet4u/9-tips-to-get-bare-minimum-of-web-accessibility-739899a9437c">The bare minimum</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Focus</h2>
+						<p>When navigating with a keyboard, focus is the currently selected element.</p>
+						<ul>
+							<li>Only certain elements are focusable</li>
+							<li>DOM order determines focus order</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Offscreen Elements</h2>
+						<p>Even if offscreen, elements can gain focus.</p>
+						<p>Use <br><code class="css">display: none;</code> <br>or <br><code class="css">visibility: hidden;</code><br> to prevent this.</p>
+						<p>Can use libraries like <a href="https://github.com/WICG/inert">inert.js</a></p>
+					</section>
+					<section>
+						<h2>Tab Index</h2>
+						<p>Use to set focus order when you can't move the html.</p>
+						<ul>
+							<li>Like z-index, use sparingly</li>
+							<li>DOM order determines focus order</li>
+							<li>Tabindex > 0 sets priority</li>
+							<li>Tabindex of -1 removes element from focus order</li>
+							<li>You may need to manage focus with javascript</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Semantics</h2>
+						<p>Giving inherent meaning to your page with HTML elements. See this <a href="http://udacity.github.io/ud891/lesson3-semantics-built-in/02-chromevox-lite/">demo page</a>.</p>
+					</section>
+					<section>
+						<h2>Breakdown</h2>
+						<p>Elements contain different information</p>
+						<ul>
+							<li>Role / Type</li>
+							<li>Name</li>
+							<li>Value</li>
+							<li>State (Checked, unchecked, etc)</li>
+						</ul>
+						<p>Eamples include headings, figures, and inputs</p>
+					</section>
+					<section>
+						<h2>Alternate Text</h2>
+						<ul>
+							<li>Screen readers will use file names by default</li>
+							<li>Describe images with the <code>alt</code> attribute</li>
+							<li>Skip images, like icons, that don't need description with <code class="html">alt=""</code></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>ARIA</h2>
+						<p>Accessible Rich Internet Applications</p>
+						<p>Or: What do do when you break the rules, and native html is not enough.</p>
+					</section>
+					<section>
+						<p>Adding a role will help make non-semantic elements accessible</p>
+						<pre><code>
+<div class="btn btn-primary" role="button" tabindex="0">
+	Tell Me More
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<p>Labels</p>
+						<pre><code>
+// Identify menu buttons
+<button class="hamburger" aria-label="menu"></button>
+// Associate descriptive text
+<input type="text" aria-describedby="username-help">
+<small id="username-help">Some Rules</small>
+
+						</code></pre>
+						<p><a href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships">More...</a></p>
+					</section>
+
+					<section>
+						<p>Dynamic Content</p>
+						<pre><code>
+// Prevent screenreaders from seeing
+<form class="offscreen" aria-hidden="true"></form>
+// Notify when updated
+<span class="connection-status" aria-live="polite">Reconnecting...</span>
+
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Styles</h2>
+						<p>Contrast, Size, and Responsiveness</p>
+					</section>
+					<section>
+						<h2>Responsiveness</h2>
+						<p>Make your site work on all devices.</p>
+						<ul>
+							<li>Mobile support is part of accessibility</li>
+							<li>Load time is part of accessibility</li>
+							<li>Use a proper viewport meta tag</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Size</h2>
+						<p>Make stuff big, let people make it bigger.</p>
+						<ul>
+							<li>Use em and rem instead of px</li>
+							<li>#1 complaint about the web is <a href="https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/">bad typography</a></li>
+							<li>Give buttons reasonable size (48px) and spacing (32px)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Contrast</h2>
+						<p>Make text easy to read. Use a <a href="https://contrastchecker.com/">contrast checker</a>.</p>
+						<ul>
+							<li>Applies to elderly and colorblind</li>
+							<li>Use pattern and shape for important elements</li>
+							<li>Always use a focus style</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Them's the Basics</h2>
+						<p>This is a good foundation to keep you aware of things.</p>
+					</section>
+					<section>
+						<h2>Your Projects</h2>
+						<p>Should pass a test with the WAVE extension and be fully navigable with a keyboard.</p>
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

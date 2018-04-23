@@ -1,0 +1,171 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset, variables, mixins ================================= */
+@import 'reset';
+
+$primary-color: #fff;
+$text-color: #000;
+$accent-color: #ff0088;
+
+$tablet-breakpoint: 640px;
+$desktop-breakpoint: 960px;
+
+@mixin bp-large {
+	@media only screen and (min-width: $desktop-breakpoint) {
+		@content; // This lets you put stuff inside of the mixin
+	}
+}
+
+@mixin bp-small {
+	@media only screen and (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: $primary-color;
+	color: $text-color;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+	font-weight: 100;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1rem;
+	color: $accent-color;
+}
+
+p {
+	line-height: 1.25rem;
+}
+
+a {
+	color: $accent-color;
+}
+
+section {
+	padding: 10px 20px;
+	margin: 0 auto;
+}
+
+header {
+
+	>img {
+		width: 100%;
+		min-height: 200px;
+		max-height: 400px;
+		object-fit: cover;
+	}
+
+	>section {
+		max-width: 800px;
+	}
+}
+
+/* 2. Content ================================= */
+
+.media {
+	display: flex;
+	align-items: center;
+
+	.media-figure {
+		margin-right: 1em;
+	}
+
+	.media-content {
+		flex: 1;
+	}
+}
+
+.author {
+	margin: 20px auto 10px;
+
+	img {
+		max-width: 60px;
+		border-radius: 60px;
+	}
+}
+
+.post-body {
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+
+	>p {
+		flex-basis: 100%;
+		padding: 10px 5px;
+
+		@include bp-small {
+			flex-basis: 50%;
+		}
+	}
+}
+
+.post-image {
+	position: relative;
+	flex-basis: 100%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+		transition: 0.3s;
+	}
+
+	figcaption {
+		position: absolute;
+		width: 100%;
+		padding: 20px;
+		bottom: 0;
+		color: white;
+		background: rgba(0, 0, 0, 0.6);
+
+		transition: 0.3s;
+		transform: translateY(100%);
+	}
+
+	&:hover {
+		figcaption {
+			transform: translateY(0);
+		}
+
+		img {
+			transform: scale(1.2);
+		}
+	}
+}
