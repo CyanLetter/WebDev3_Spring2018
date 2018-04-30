@@ -1,0 +1,156 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+$primary-dark: #2b2d31;		// dark brown
+$primary-light: #ffffff;	// white
+$accent-light: #f46353;		// bright orange
+$valid-color: #00e600;		// Bright green
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: $primary-dark;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+a {
+	color: $accent-light;
+}
+
+
+/* 2. Content ================================= */
+
+.form-container {
+
+	background: $primary-light;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+
+	.form-container-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: $accent-light;
+		color: $primary-light;
+		padding: 20px;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;	
+		color: $primary-dark;
+		padding: 20px;
+	}
+
+	label {
+		line-height: 1rem;
+		margin-top: 15px;
+		font-weight: 300;
+		transition: 0.2s;
+	}
+
+	input[type="text"], input[type="email"] {
+		padding: 3px 0;
+		margin-bottom: 8px;
+		border: none;
+		outline: none;
+		border-color: $primary-dark;
+		border-bottom: 2px solid $primary-dark;
+		font-size: 1.6rem;
+		transition: 0.2s;
+
+		&:valid {
+			padding: 3px;
+			border-color: $valid-color;
+		}
+
+		&:focus {
+			padding: 3px;
+			border-color: $accent-light;
+		}
+	}
+
+	button {
+		border: 2px solid $accent-light;
+		outline: none;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 1rem;
+		background: none;
+		cursor: pointer;
+
+		transition: 0.2s;
+
+		&:hover, &:focus {
+			background: $accent-light;
+			color: $primary-light;
+		}
+	}
+
+	a {
+		margin-right: 20px;
+	}
+
+	.text-group {
+		display: flex;
+		flex-direction: column-reverse;
+
+		input[type="text"], input[type="email"] {
+			+ label {
+				opacity: 0.6;
+				font-size: 1.6rem;
+				transform: translateY(1.6rem);
+			}
+
+			&:focus, &:valid {
+				+ label {
+					opacity: 1;
+					font-size: 1rem;
+					transform: translateY(0);
+				}
+			}			
+		}
+	}
+
+	.submit-group {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-top: 40px;
+	}
+}

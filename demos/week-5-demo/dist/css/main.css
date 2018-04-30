@@ -1,0 +1,193 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #2b2d31;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+a {
+	color: #f46353;
+}
+
+/* 2. Content ================================= */
+.form-container {
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form-container .form-container-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #f46353;
+	color: #ffffff;
+	padding: 20px;
+}
+
+.form-container form {
+	display: flex;
+	flex-direction: column;
+	color: #2b2d31;
+	padding: 20px;
+}
+
+.form-container label {
+	line-height: 1rem;
+	margin-top: 15px;
+	font-weight: 300;
+	transition: 0.2s;
+}
+
+.form-container input[type="text"], .form-container input[type="email"] {
+	padding: 3px 0;
+	margin-bottom: 8px;
+	border: none;
+	outline: none;
+	border-color: #2b2d31;
+	border-bottom: 2px solid #2b2d31;
+	font-size: 1.6rem;
+	transition: 0.2s;
+}
+
+.form-container input[type="text"]:valid, .form-container input[type="email"]:valid {
+	padding: 3px;
+	border-color: #00e600;
+}
+
+.form-container input[type="text"]:focus, .form-container input[type="email"]:focus {
+	padding: 3px;
+	border-color: #f46353;
+}
+
+.form-container button {
+	border: 2px solid #f46353;
+	outline: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1rem;
+	background: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.form-container button:hover, .form-container button:focus {
+	background: #f46353;
+	color: #ffffff;
+}
+
+.form-container a {
+	margin-right: 20px;
+}
+
+.form-container .text-group {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.form-container .text-group input[type="text"] + label, .form-container .text-group input[type="email"] + label {
+	opacity: 0.6;
+	font-size: 1.6rem;
+	transform: translateY(1.6rem);
+}
+
+.form-container .text-group input[type="text"]:focus + label, .form-container .text-group input[type="text"]:valid + label, .form-container .text-group input[type="email"]:focus + label, .form-container .text-group input[type="email"]:valid + label {
+	opacity: 1;
+	font-size: 1rem;
+	transform: translateY(0);
+}
+
+.form-container .submit-group {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 40px;
+}
+
+/*# sourceMappingURL=main.css.map */

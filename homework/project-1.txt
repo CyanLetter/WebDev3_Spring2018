@@ -1,0 +1,16 @@
+Refactor your final project from Web Dev 1. Based on everything you have learned in Web Dev 2 and 3, update this project to follow current web development standards and best practices. In the end, you should have a solid portfolio piece.
+
+Refactoring includes the following tasks, in no particular order:
+
+- Put your project in a Git repository.
+- Update it to use the Circus Starter template
+- Make sure it passes the starter template's validation
+- Update your project to use Sass.
+- Make it responsive.
+- Make it pass accessibility validation with the WAVE tool.
+- Make it follow good practices for SEO.
+- Optimize page load times and pass Google's page speed tests.
+- Add cool stuff, e.g. make the carousel work, add animations and transitions, replace placeholder content.
+- Host it.
+
+You will probably end up re-writing most of your site, and that's ok. When refactoring, deleting bad code is as important as adding good code. Use what you have learned to build this site better.
