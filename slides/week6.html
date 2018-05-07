@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Dev 3</title>
+
+		<meta name="description" content="Lecture for Web Dev 3">
+		<meta name="author" content="Dakota Ling">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Week 6</h1>
+					<p>SEO</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>SEO</h2>
+						<p>Search Engine Optimization,</p>
+						<p>or improving your website's ranking in unpaid search results.</p>
+						<p>This effectively means Google.</p>
+					</section>
+					<section>
+						<h2>Things change fast</h2>
+						<p>Search engines constantly tweak their <a href="https://support.google.com/webmasters/answer/7451184?hl=en">rules</a>.</p>
+						<p>Old SEO tactics can now hurt you ranking.</p>
+					</section>
+					<section>
+						<h2>A broad field</h2>
+						<p>There are <a href="https://www.hobo-web.co.uk/seo-tutorial/">experts</a> who focus on this exclusively.</p>
+						<p>This is a good primer.</p>
+					</section>
+					<section>
+						<h2>This takes time</h2>
+						<p>Changing a site and seeing results is an iterative process.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Fundamentals</h2>
+						<ul>
+							<li>Unique Titles</li>
+							<li>Original Content</li>
+							<li>Good User Experience</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Good user experience</h2>
+						<p>Google wants a good experience for its users.</p>
+					</section>
+					<section>
+						<p>Good UX means showing their users...</p>
+						<ul>
+							<li>Relevant content</li>
+							<li>Reputable sources</li>
+							<li>Easily navigable sites</li>
+							<li><a href="https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html?hl=en-US&utm_source=PSI&utm_medium=incoming-link&utm_campaign=PSI">Mobile first sites</a></li>
+						</ul>
+					</section>
+					<section>
+						<p>SEO is not...</p>
+						<ul>
+							<li>Cheating the system</li>
+							<li>Useless filler</li>
+							<li>Spammy or ad-heavy sites</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Crawling and Indexing</h2>
+						<p>How search engines index the web.</p>
+						<p><a href="https://support.google.com/webmasters/answer/70897">Google's explanation.</a></p>
+					</section>
+					<section>
+						<h2>Crawlers</h2>
+						<p>A web filled with spiders.</p>
+						<p>Bots periodically go to webpages, look for links, and follow them.</p>
+					</section>
+					<section>
+						<h2>robots.txt</h2>
+						<p>A file telling crawlers what to ignore</p>
+						<pre><code>
+User-agent: *
+Disallow: /nobots/
+
+Sitemap: http://www.example.com/sitemap.xml
+						</code></pre>
+					</section>
+					<section>
+						<h2>Indexing</h2>
+						<p>Bots scrape the site and attempt to record its contents.</p>
+					</section>
+					<section>
+						<h2>Search</h2>
+						<p>Google attempts to pull together relevant pieces in its search results.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Tools</h2>
+						<p>Ways to check how well your site shapes up.</p>
+					</section>
+					<section>
+						<p><a href="https://www.google.com/webmasters/tools">Google Webmaster Tools</a></p>
+						<p>Free, requires an actual site with proof of ownership.</p>
+					</section>
+					<section>
+						<p><a href="https://developers.google.com/speed/pagespeed/insights/">Google Pagespeed Insights</a></p>
+						<p>Test speed and relevance on mobile and desktop.</p>
+					</section>
+					<section>
+						<p><a href="https://www.seotesteronline.com/en/seo-checker/url">SEO Tester</a></p>
+						<p>Check more detailed SEO recommendations.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Metadata</h2>
+						<p>Meta tags that affect SEO</p>
+					</section>
+					<section>
+						<h2>Title Tag</h2>
+						<ul>
+							<li>First line of results</li>
+							<li>Should be unique per page</li>
+							<li>Should match a page's topic</li>
+						</ul>
+						<p>Starbucks is a good example.</p>
+					</section>
+					<section>
+						<h2>Meta Description</h2>
+						<pre><code> <meta name="description" content="A good description"> </code></pre>
+						<p>A summary of the page, longer than the title.</p>
+						<p>Likely to be used directly in the result.</p>
+					</section>
+					<section>
+						<h2>Keywords</h2>
+						<pre><code> <meta name="keywords" content="useless"> </code></pre>
+						<p>This is no longer used.</p>
+					</section>
+					<section>
+						<h2>Platform Specific</h2>
+						<p>Additional control over your site's presentation</p>
+						<ul>
+							<li>Facebook's <a href="https://developers.facebook.com/docs/sharing/webmasters">Open Graph</a></li>
+							<li>Google's <a href="https://developers.google.com/search/docs/guides/intro-structured-data">Structured Data</a></li>
+							<li><a href="http://schema.org/">Other Microdata</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Content</h2>
+						<p>"Make your site interesting and useful" - Google</p>
+					</section>
+					<section>
+						<h2>H tag structure</h2>
+						<ul>
+							<li>One h1, two - three h2s, etc.</li>
+							<li>Like a page outline</li>
+							<li>Determines keyword importance</li>
+						</ul>
+					</section>
+					<section>
+						<h2>The fold</h2>
+						<p>Above the fold content should be immediately useful.</p>
+						<p>Ads can hurt this.</p>
+					</section>
+					<section>
+						<h2>User Generated Content</h2>
+						<p>Spam comments can hurt your ranking</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Links</h2>
+						<p>The web is built on links</p>
+					</section>
+					<section>
+						<h2>URL</h2>
+						<p>Use words in your urls</p>
+					</section>
+					<section>
+						<h2>Internal links</h2>
+						<p>Define a clear hierarchy and site flow, starting from the root.</p>
+						<p>Make links available immediately.</p>
+					</section>
+					<section>
+						<h2>External Links</h2>
+						<ul>
+							<li>Link to reputable sites</li>
+							<li>Get linked to by reputable sites</li>
+							<li>Use nofollow</li>
+						</ul>
+						<pre><code>
+<a href="http://www.example.com" rel="nofollow">Link</a>
+						</code></pre>
+					</section>
+				</section>
+
+				
+
+				<section>
+					<section>
+						<h2>Accessibility</h2>
+						<p>Robots are people, too</p>
+					</section>
+					<section>
+						<p>Make your pages descriptive and helpful for everyone.</p>
+					</section>
+					<section>
+						<h2>Alt text</h2>
+						<p>Describe your images, for both search and screen readers</p>
+					</section>
+					<section>
+						<h2>Descriptive Links</h2>
+						<p>Use link text to describe the thing you're linking</p>
+					</section>
+					<section>
+						<h2>Mobile First</h2>
+						<p>Responsive, fast, well-designed sites are more friendly to navigate.</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>That's It</h2>
+					<p>Enough to get you started.</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
