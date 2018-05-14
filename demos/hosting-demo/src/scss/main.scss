@@ -1,0 +1,72 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+$primary-dark: #2b2d31;		// dark brown
+$text-body: #ffffff;		// white
+$text-link: #e8019b;		// raging magenta
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+
+body {
+	background: $primary-dark;
+	color: $text-body;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2.8rem;
+	font-weight: bold;
+}
+
+a {
+	color: $text-link;
+}
+
+
+/* 2. Content ================================= */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+
+	h1 {
+		margin-bottom: 15px;
+	}
+
+	a {
+		margin: 10px;
+		display: block;
+	}
+}

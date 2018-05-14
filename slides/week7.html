@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Dev 3</title>
+
+		<meta name="description" content="Lecture for Web Dev 3">
+		<meta name="author" content="Dakota Ling">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Week 7</h1>
+					<p>Hosting</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Hosting Your Website</h2>
+						<p>To put your site out on the web you need:</p>
+						<ul>
+							<li>A Server</li>
+							<li>A Domain Name</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is a server?</h2>
+						<p>A computer with a permanent IP address that you can throw your files onto.</p>
+					</section>
+
+					<section>
+						<h2>IP Address</h2>
+						<ul>
+							<li>Every computer has one</li>
+							<li>Servers are accessibile from anywhere</li>
+							<li>Difference between local and external IP</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Public / External IP</h2>
+						<ul>
+							<li>Assigned by your ISP</li>
+							<li>How your computer communicates with google, your website, etc.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Private / Local IP</h2>
+						<ul>
+							<li>Assigned by your router</li>
+							<li>How your router communicates between your ISP and your computers</li>
+							<li>Not externally visible</li>
+						</ul>
+					</section>
+					<section>
+						<h2>ICANN</h2>
+						<p>Internet Corporation for Assigned Names and Numbers.</p>
+						<p>Oversees things like IP address and domain name registry.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is a domain name?</h2>
+						<p>A human readable address that you register with an ICANN registrar.</p>
+						<p><a href="https://whois.icann.org/en/domain-name-registration-process">ICANN process diagram.</a></p>
+					</section>
+					<section>
+						<p>Domains must</p>
+						<ul>
+							<li>Be registered to a person</li>
+							<li>Point to a specific server</li>
+						</ul>
+						<p>See also: WHOIS</p>
+					</section>
+					<section>
+						<h2>DNS</h2>
+						<p>Servers that keep a log of nameservers for all domain names</p>
+					</section>
+					<section>
+						<h2>Nameservers</h2>
+						<p>Hosting provider servers that connect you to a specific server IP</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Hosting Providers</h2>
+						<ul>
+							<li>Hostgator</li>
+							<li>Bluehost</li>
+							<li>Dreamhost</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Domain Name Registrars</h2>
+						<ul>
+							<li>Hover</li>
+							<li>Namecheap</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Hostgator</h2>
+						<p>This is the provider we will be using.</p>
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
